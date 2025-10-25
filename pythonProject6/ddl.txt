@@ -1,0 +1,18 @@
+-- big.book definition
+
+CREATE TABLE `book` (
+  `id` varchar(100) DEFAULT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `url` varchar(100) DEFAULT NULL,
+  `img` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- big.`member` definition
+
+CREATE TABLE `member` (
+  `id` varchar(100) NOT NULL,
+  `pw` varchar(100) DEFAULT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `tel` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
