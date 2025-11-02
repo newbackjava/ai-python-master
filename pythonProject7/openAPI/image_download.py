@@ -10,10 +10,11 @@ url = "https://dispatch.cdnser.be/cms-content/uploads/2020/04/09/a26f4b7b-9769-4
 start = time.time()
 
 # curl 요청
-os.system("curl " + url + " > test.jpg")
+os.system("curl " + url + " > test2.jpg")
 
 # 이미지 다운로드 시간 체크
 print(time.time() - start)
 
 # 저장 된 이미지 확인
-img = Image.open("test.jpg")
+img = Image.open("test2.jpg")
+print(img)
